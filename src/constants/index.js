@@ -255,22 +255,18 @@ const testimonials = [
 const socialImgs = [
   {
     name: "insta",
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/vishal_maurya_222/",
     imgPath: "/images/insta.png",
   },
   {
-    name: "fb",
-    url: "https://www.facebook.com/",
-    imgPath: "/images/fb.png",
+    name: "GitHub",
+    url: "https://github.com/Vishal-hub-222/",
+    imgPath: "/images/sllmnhx-github-6980894.svg",
   },
-  {
-    name: "x",
-    url: "https://www.x.com/",
-    imgPath: "/images/x.png",
-  },
+ 
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/vishal-maurya-565a15275/",
     imgPath: "/images/linkedin.png",
   },
 ];
