@@ -470,3 +470,70 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+/* Grid Layout */
+.tech-grid {
+  display: grid;
+  gap: 16px;
+}
+
+/* Mobile: 2 capsule per row */
+@media (max-width: 720px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop layout */
+@media (min-width: 721px) {
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+/* Card Base */
+.tech-card {
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Hover Animation */
+.tech-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Tap Effect */
+@media (max-width: 720px) {
+  .tech-card:active {
+    transform: scale(0.95);
+  }
+}
+
+/* Glow Effect */
+.tech-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tech-card:hover::before {
+  opacity: 1;
+}
+
+/* Icon Wrapper */
+.tech-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

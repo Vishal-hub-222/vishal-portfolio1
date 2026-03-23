@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import { Room } from "./Room";
 import HeroLights from "./HeroLights";
 import Particles from "./Particles";
-import { div } from "three/tsl";
+
 
 export const HeroExperience = () => {
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });

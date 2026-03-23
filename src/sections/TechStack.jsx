@@ -39,19 +39,15 @@ function TechStack() {
         />
 
         <div className='tech-grid'>
-          {techToRender.map((icon) => (
+          {techStackIcons.map((icon) => (
             <div
               key={icon.name}
-              className='card-border tech-card overflow-hidden group xl:rounded-full rounded-lg'
+              className='card-border tech-card overflow-hidden group xl:rounded-full rounded-lg max-[720px]:rounded-full'
             >
               <div className='tech-card-animated-bg' />
               <div className='tech-card-content'>
                 <div className='tech-icon-wrapper'>
-                  {isMobile ? (
-                    <img src={icon.imgPath} alt={icon.name} />
-                  ) : (
                     <TechIcon model={icon} />
-                  )}
                 </div>
                 <div className='padding-x w-full'>
                   <p>{icon.name}</p>

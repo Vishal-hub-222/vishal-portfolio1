@@ -26,7 +26,7 @@ export const ShowcaseSection = () => {
           y: 0,
           opacity: 1,
           duration: 1,
-          delay: 0.2 * (index + 1),
+          delay: 0.1 * (index + 1),
           ease: "power3.out",
           scrollTrigger: {
             trigger: card,
@@ -39,7 +39,7 @@ export const ShowcaseSection = () => {
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
-      { opacity: 1, duration: 1.5 }
+      { opacity: 1, duration: 0.7 }
     );
   }, []);
 
