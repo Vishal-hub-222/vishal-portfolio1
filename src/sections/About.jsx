@@ -19,7 +19,7 @@ const About = () => {
               Hello! I'm{" "}
               <span className="font-semibold text-white transition duration-300 
               group-hover:text-blue-400">
-                Vishu Maurya
+                Vishal Maurya
               </span>
               , a passionate web developer and a 3rd-year engineering student.
             </p>
@@ -49,7 +49,7 @@ const About = () => {
 
 
              <a
-  href="/resume.pdf"
+  href="images\My_resume.pdf"
   download
   className="px-5 py-2 rounded-full border border-white 
   hover:bg-white hover:text-black transition"
